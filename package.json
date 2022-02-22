@@ -1,0 +1,15 @@
+{
+  "name": "aws-s3-bucket",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Bruno Chirelli <brunochirelli@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "deploy": "aws s3 sync ./_site/ s3://brunochirelli.com/"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.0",
+    "eslint": "^8.9.0",
+    "prettier": "^2.5.1"
+  }
+}
