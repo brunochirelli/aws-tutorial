@@ -1,11 +1,10 @@
 {
   "name": "aws-s3-bucket",
   "version": "1.0.0",
-  "main": "index.js",
   "author": "Bruno Chirelli <brunochirelli@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "build": "yarn parcel ./index.html",
+    "build": "yarn parcel build ./index.html --dist-dir ./dist",
     "deploy": "aws s3 sync ./dist/ s3://brunochirelli.com/",
     "test": "echo \"Someday will we have tests\""
   },
