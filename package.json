@@ -5,11 +5,12 @@
   "author": "Bruno Chirelli <brunochirelli@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "deploy": "aws s3 sync ./_site/ s3://brunochirelli.com/"
+    "build": "yarn parcel ./index.html",
+    "deploy": "aws s3 sync ./dist/ s3://brunochirelli.com/"
   },
   "devDependencies": {
-    "@11ty/eleventy": "^1.0.0",
     "eslint": "^8.9.0",
+    "parcel": "^2.3.2",
     "prettier": "^2.5.1"
   }
 }
