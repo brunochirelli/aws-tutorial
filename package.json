@@ -5,7 +5,7 @@
   "license": "MIT",
   "scripts": {
     "build": "yarn parcel build ./index.html --dist-dir ./dist",
-    "deploy": "aws s3 sync ./dist/ s3://brunochirelli.com/",
+    "deploy": "aws s3 sync ./dist/ s3://brunochirelli1.com/",
     "test": "echo \"Someday will we have tests\""
   },
   "devDependencies": {
